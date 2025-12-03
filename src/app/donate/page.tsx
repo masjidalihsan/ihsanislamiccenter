@@ -1,7 +1,12 @@
 import { Metadata } from 'next';
 import { siteConfig } from '@/data/siteConfig';
 
-const STRIPE_LINK = "https://buy.stripe.com/00weVe6BFerMgQeeyvfUQ00";
+const DONATION_LINKS = {
+  10: "https://buy.stripe.com/bJe14oe4783o57weyvfUQ04",
+  20: "https://buy.stripe.com/cNicN60dhgzU9nMgGDfUQ03",
+  30: "https://buy.stripe.com/14A5kEe473N8czYcqnfUQ02",
+  custom: "https://buy.stripe.com/00weVe6BFerMgQeeyvfUQ00",
+};
 
 export const metadata: Metadata = {
   title: 'Donate',
@@ -64,23 +69,36 @@ export default function DonatePage() {
               <div className="p-6 md:p-8">
                 {/* Quick Amount Buttons */}
                 <p className="text-center text-gray-600 mb-4 font-medium">Select a donation amount:</p>
-                <div className="grid grid-cols-3 gap-3 mb-6">
-                  {[10, 25, 50, 100, 250, 500].map((amount) => (
-                    <a
-                      key={amount}
-                      href={`${STRIPE_LINK}?quantity=${amount}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="py-4 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
-                    >
-                      ${amount}
-                    </a>
-                  ))}
+                <div className="grid grid-cols-3 gap-4 mb-6">
+                  <a
+                    href={DONATION_LINKS[10]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-5 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-xl text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
+                  >
+                    $10
+                  </a>
+                  <a
+                    href={DONATION_LINKS[20]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-5 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-xl text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
+                  >
+                    $20
+                  </a>
+                  <a
+                    href={DONATION_LINKS[30]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-5 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-xl text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
+                  >
+                    $30
+                  </a>
                 </div>
 
                 {/* Custom Amount Button */}
                 <a
-                  href={STRIPE_LINK}
+                  href={DONATION_LINKS.custom}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full py-5 px-8 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-lg font-bold rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
@@ -89,7 +107,7 @@ export default function DonatePage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
-                    Give a Custom Amount
+                    Give a Different Amount
                   </span>
                 </a>
               </div>
