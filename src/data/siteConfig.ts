@@ -185,6 +185,14 @@ export const siteConfig: SiteConfig = {
   },
   events: [
     {
+      title: "VIP Umrah Trip - January 2026",
+      date: "2026-01-17",
+      time: "January 17-30, 2026",
+      description: "Join Al-Ihsan Islamic Center for an unforgettable VIP Umrah experience! 7 nights in Meccah, 3 nights in Madinah. Package includes flight, 5-star hotel, visa, and transfers. Price from $2,800 per person. Contact: Sh. Mohamed Mursal (651) 808-3584, Ahmed Anshur (651) 706-9933, or Sh. Ise Abdi (612) 242-8944.",
+      location: "Meccah & Madinah, Saudi Arabia",
+      image: "/umrah-event.jpg"
+    },
+    {
       title: "Al-Ihsan Machad & Qur'an Graduation - Class of 2025",
       date: "2025-12-14",
       time: "2:00 PM – 6:00 PM",
