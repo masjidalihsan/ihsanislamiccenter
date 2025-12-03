@@ -78,9 +78,13 @@ export default function DonatePage() {
                 </a>
 
                 {/* Helper Text */}
-                <p className="text-center text-gray-500 text-sm">
-                  You can adjust the donation amount on the next page
-                </p>
+                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
+                  <p className="text-amber-800 font-medium mb-2">How to choose your donation amount:</p>
+                  <p className="text-amber-700 text-sm">
+                    On the payment page, adjust the <strong>quantity</strong> to set your donation.<br />
+                    Example: Quantity 25 = $25, Quantity 100 = $100
+                  </p>
+                </div>
               </div>
 
               {/* Secure Payment Badge */}
