@@ -62,29 +62,36 @@ export default function DonatePage() {
 
               {/* Card Body */}
               <div className="p-6 md:p-8">
-                {/* Main Donate Button */}
+                {/* Quick Amount Buttons */}
+                <p className="text-center text-gray-600 mb-4 font-medium">Select a donation amount:</p>
+                <div className="grid grid-cols-3 gap-3 mb-6">
+                  {[10, 25, 50, 100, 250, 500].map((amount) => (
+                    <a
+                      key={amount}
+                      href={`${STRIPE_LINK}?quantity=${amount}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-4 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
+                    >
+                      ${amount}
+                    </a>
+                  ))}
+                </div>
+
+                {/* Custom Amount Button */}
                 <a
                   href={STRIPE_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full py-6 px-8 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-xl font-bold rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-6"
+                  className="block w-full py-5 px-8 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-lg font-bold rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <span className="flex items-center justify-center gap-3">
-                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
-                    Support Masjid Ihsan – Donate Now
+                    Give a Custom Amount
                   </span>
                 </a>
-
-                {/* Helper Text */}
-                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
-                  <p className="text-amber-800 font-medium mb-2">How to choose your donation amount:</p>
-                  <p className="text-amber-700 text-sm">
-                    On the payment page, adjust the <strong>quantity</strong> to set your donation.<br />
-                    Example: Quantity 25 = $25, Quantity 100 = $100
-                  </p>
-                </div>
               </div>
 
               {/* Secure Payment Badge */}
