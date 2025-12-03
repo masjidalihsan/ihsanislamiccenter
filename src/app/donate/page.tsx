@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function DonatePage() {
-  const amounts = [10, 25, 50, 100, 250, 500];
-
   return (
     <>
       {/* Hero Section */}
@@ -69,48 +67,20 @@ export default function DonatePage() {
                   href={STRIPE_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full py-5 px-8 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-xl font-bold rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-8"
+                  className="block w-full py-6 px-8 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-xl font-bold rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-6"
                 >
                   <span className="flex items-center justify-center gap-3">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                     Support Masjid Ihsan – Donate Now
                   </span>
                 </a>
 
-                {/* Quick Amount Section */}
-                <div className="mb-8">
-                  <p className="text-center text-gray-600 mb-4 font-medium">Or choose a suggested amount:</p>
-                  <div className="grid grid-cols-3 gap-3">
-                    {amounts.map((amount) => (
-                      <a
-                        key={amount}
-                        href={STRIPE_LINK}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-4 px-4 bg-gray-50 hover:bg-green-50 border-2 border-gray-200 hover:border-green-500 rounded-xl text-center font-bold text-gray-700 hover:text-green-700 transition-all duration-200 transform hover:scale-105"
-                      >
-                        ${amount}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Custom Amount Link */}
-                <div className="text-center">
-                  <a
-                    href={STRIPE_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium underline underline-offset-4 decoration-2 decoration-green-300 hover:decoration-green-500 transition-colors"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                    </svg>
-                    Give a different amount
-                  </a>
-                </div>
+                {/* Helper Text */}
+                <p className="text-center text-gray-500 text-sm">
+                  You can adjust the donation amount on the next page
+                </p>
               </div>
 
               {/* Secure Payment Badge */}
