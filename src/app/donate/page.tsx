@@ -1,10 +1,16 @@
 import { Metadata } from 'next';
 import { siteConfig } from '@/data/siteConfig';
 
-const DONATION_LINKS = {
+const DONATION_LINKS: { [key: number | string]: string } = {
   10: "https://buy.stripe.com/bJe14oe4783o57weyvfUQ04",
   20: "https://buy.stripe.com/cNicN60dhgzU9nMgGDfUQ03",
   30: "https://buy.stripe.com/14A5kEe473N8czYcqnfUQ02",
+  50: "https://buy.stripe.com/cNi6oI7FJfvQ2ZofCzfUQ05",
+  100: "https://buy.stripe.com/4gM7sM8JNerMdE2eyvfUQ06",
+  200: "https://buy.stripe.com/6oUbJ20dh4Rc7fE8a7fUQ07",
+  250: "https://donate.stripe.com/9B66oI4txgzUdE2763fUQ08",
+  500: "https://buy.stripe.com/dRmaEY3ptgzU43s2PNfUQ09",
+  1000: "https://donate.stripe.com/6oU00kaRV83o57wbmjfUQ0a",
   custom: "https://buy.stripe.com/00weVe6BFerMgQeeyvfUQ00",
 };
 
@@ -69,31 +75,18 @@ export default function DonatePage() {
               <div className="p-6 md:p-8">
                 {/* Quick Amount Buttons */}
                 <p className="text-center text-gray-600 mb-4 font-medium">Select a donation amount:</p>
-                <div className="grid grid-cols-3 gap-4 mb-6">
-                  <a
-                    href={DONATION_LINKS[10]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-5 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-xl text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
-                  >
-                    $10
-                  </a>
-                  <a
-                    href={DONATION_LINKS[20]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-5 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-xl text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
-                  >
-                    $20
-                  </a>
-                  <a
-                    href={DONATION_LINKS[30]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-5 px-4 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-xl text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
-                  >
-                    $30
-                  </a>
+                <div className="grid grid-cols-3 gap-3 mb-6">
+                  {[10, 20, 30, 50, 100, 200, 250, 500, 1000].map((amount) => (
+                    <a
+                      key={amount}
+                      href={DONATION_LINKS[amount]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-4 px-3 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-lg text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
+                    >
+                      ${amount.toLocaleString()}
+                    </a>
+                  ))}
                 </div>
 
                 {/* Custom Amount Button */}
