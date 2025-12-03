@@ -15,6 +15,7 @@ const navLinks = [
 ];
 
 const moreLinks = [
+  { href: '/umrah', label: 'Umrah 2026' },
   { href: '/leadership', label: 'Leadership' },
   { href: '/youth', label: 'Youth' },
   { href: '/ramadan', label: 'Ramadan' },
