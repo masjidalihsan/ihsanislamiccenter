@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 
-// Ramadan 2025 expected start date (March 1, 2025 - may vary based on moon sighting)
-const RAMADAN_START_DATE = new Date('2025-03-01T00:00:00');
+// Ramadan 2026 expected start date (February 18, 2026 - may vary based on moon sighting)
+const RAMADAN_START_DATE = new Date('2026-02-18T00:00:00');
 
 interface TimeLeft {
   days: number;
@@ -91,7 +91,7 @@ export default function RamadanCountdown() {
             </svg>
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Ramadan Countdown</h2>
-          <p className="text-primary-100">Ramadan 2025 begins on March 1st, insha&apos;Allah</p>
+          <p className="text-primary-100">Ramadan 2026 begins on February 18th, insha&apos;Allah</p>
         </div>
 
         <div className="grid grid-cols-4 gap-3 md:gap-6 max-w-2xl mx-auto">
