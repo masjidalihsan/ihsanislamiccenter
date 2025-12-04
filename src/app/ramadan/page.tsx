@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
+import RamadanCountdown from '@/components/RamadanCountdown';
 import { siteConfig } from '@/data/siteConfig';
 
 export const metadata: Metadata = {
@@ -20,6 +21,9 @@ export default function RamadanPage() {
 
       <section className="py-16 md:py-20">
         <div className="container-custom">
+          {/* Ramadan Countdown */}
+          <RamadanCountdown />
+
           {/* Welcome Message */}
           <div className="max-w-3xl mx-auto text-center mb-16">
             <div className="inline-block p-4 bg-accent-100 rounded-full mb-4">
