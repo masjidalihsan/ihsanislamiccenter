@@ -38,8 +38,7 @@ export default function PrayerTimesPage() {
                 src="https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=EdoeO9L7"
                 width="100%"
                 height="560"
-                style={{ border: 'none' }}
-                className="w-full"
+                frameBorder="0"
                 title="Prayer Times"
               />
             </div>
