@@ -23,7 +23,7 @@ export default function DonatePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-800 via-green-700 to-emerald-900 py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-violet-800 via-violet-700 to-violet-900 py-20 md:py-28 overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-40 h-40 border-2 border-white rounded-full"></div>
@@ -47,7 +47,7 @@ export default function DonatePage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Build the House of Allah <span className="text-amber-400">With Us</span>
             </h1>
-            <p className="text-xl md:text-2xl text-green-100 mb-4">
+            <p className="text-xl md:text-2xl text-violet-100 mb-4">
               Your donation helps us maintain the masjid, support programs, and serve the community.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function DonatePage() {
                       href={DONATION_LINKS[amount]}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="py-4 px-3 bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-500 rounded-xl text-center font-bold text-lg text-green-700 hover:text-green-800 transition-all duration-200 transform hover:scale-105"
+                      className="py-4 px-3 bg-violet-50 hover:bg-violet-100 border-2 border-violet-200 hover:border-violet-500 rounded-xl text-center font-bold text-lg text-violet-700 hover:text-violet-800 transition-all duration-200 transform hover:scale-105"
                     >
                       ${amount.toLocaleString()}
                     </a>
@@ -94,7 +94,7 @@ export default function DonatePage() {
                   href={DONATION_LINKS.custom}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full py-5 px-8 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-lg font-bold rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="block w-full py-5 px-8 bg-gradient-to-r from-violet-600 to-violet-700 hover:from-violet-700 hover:to-violet-800 text-white text-lg font-bold rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <span className="flex items-center justify-center gap-3">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@ export default function DonatePage() {
               {/* Secure Payment Badge */}
               <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
                 <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
-                  <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                   Secure payment powered by Stripe
@@ -121,15 +121,15 @@ export default function DonatePage() {
               <blockquote className="text-lg md:text-xl text-gray-600 italic mb-3">
                 &quot;The example of those who spend their wealth in the way of Allah is like a seed which grows seven spikes; in each spike is a hundred grains.&quot;
               </blockquote>
-              <cite className="text-green-700 font-semibold">— Surah Al-Baqarah, 2:261</cite>
+              <cite className="text-violet-700 font-semibold">— Surah Al-Baqarah, 2:261</cite>
             </div>
           </div>
 
           {/* Additional Info Cards */}
           <div className="mt-16 grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
-              <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-7 h-7 text-violet-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
@@ -168,7 +168,7 @@ export default function DonatePage() {
           <div className="mt-12 text-center">
             <p className="text-gray-600">
               Questions about donations? Contact us at{' '}
-              <a href={`mailto:${siteConfig.contact.email}`} className="text-green-700 hover:underline font-medium">
+              <a href={`mailto:${siteConfig.contact.email}`} className="text-violet-700 hover:underline font-medium">
                 {siteConfig.contact.email}
               </a>
             </p>

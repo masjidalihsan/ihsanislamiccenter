@@ -13,7 +13,7 @@ export default function YouthPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-800 via-green-700 to-emerald-900 py-20 md:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-violet-800 via-violet-700 to-violet-900 py-20 md:py-32 overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-40 h-40 border-2 border-white rounded-full"></div>
@@ -33,7 +33,7 @@ export default function YouthPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Youth <span className="text-amber-400">Halaqah</span>
             </h1>
-            <p className="text-xl md:text-2xl text-green-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-violet-100 mb-8 max-w-2xl mx-auto">
               {youth.description}
             </p>
 
@@ -61,9 +61,9 @@ export default function YouthPage() {
           {/* Program Details Card */}
           <div className="max-w-4xl mx-auto mb-16">
             <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-              <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-6 md:p-8">
+              <div className="bg-gradient-to-r from-violet-600 to-violet-600 p-6 md:p-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">What to Expect</h2>
-                <p className="text-green-100">Join us for an evening of growth, connection, and fun!</p>
+                <p className="text-violet-100">Join us for an evening of growth, connection, and fun!</p>
               </div>
               <div className="p-6 md:p-8">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -73,7 +73,7 @@ export default function YouthPage() {
                     { icon: '❓', title: 'Q&A Sessions', desc: 'Get your questions answered in a safe space' },
                     { icon: '🎮', title: 'Team Activities', desc: 'Fun games and activities to build community' },
                   ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors">
+                    <div key={index} className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-violet-50 transition-colors">
                       <span className="text-3xl">{item.icon}</span>
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
@@ -94,7 +94,7 @@ export default function YouthPage() {
                 {
                   title: 'Strengthen Your Faith',
                   description: 'Deepen your understanding of Islam through interactive learning and meaningful discussions.',
-                  color: 'from-green-500 to-emerald-600',
+                  color: 'from-violet-500 to-violet-600',
                   icon: '🕌',
                 },
                 {
@@ -124,7 +124,7 @@ export default function YouthPage() {
                 {
                   title: 'Make Memories',
                   description: 'Create unforgettable experiences and friendships that will last a lifetime.',
-                  color: 'from-teal-500 to-cyan-600',
+                  color: 'from-violet-500 to-cyan-600',
                   icon: '📸',
                 },
               ].map((feature, index) => (
@@ -141,7 +141,7 @@ export default function YouthPage() {
 
           {/* CTA Section */}
           <div className="max-w-4xl mx-auto">
-            <div className="relative bg-gradient-to-r from-green-700 via-green-600 to-emerald-700 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
+            <div className="relative bg-gradient-to-r from-violet-700 via-violet-600 to-violet-700 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute -top-10 -right-10 w-40 h-40 border-4 border-white rounded-full"></div>
@@ -150,7 +150,7 @@ export default function YouthPage() {
 
               <div className="relative z-10">
                 <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Join?</h3>
-                <p className="text-green-100 text-lg mb-8 max-w-xl mx-auto">
+                <p className="text-violet-100 text-lg mb-8 max-w-xl mx-auto">
                   Come as you are! All youth are welcome to join us every Sunday. Bring a friend and be part of something amazing.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">

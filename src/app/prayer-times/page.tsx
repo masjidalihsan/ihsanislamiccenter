@@ -10,7 +10,7 @@ export default function PrayerTimesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-800 via-green-700 to-emerald-900 py-16 md:py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-violet-800 via-violet-700 to-violet-900 py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-40 h-40 border-2 border-white rounded-full"></div>
           <div className="absolute bottom-10 right-10 w-60 h-60 border-2 border-white rounded-full"></div>
@@ -21,8 +21,8 @@ export default function PrayerTimesPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Prayer Times
             </h1>
-            <p className="text-xl text-green-100">
-              Join us for daily prayers at Al-Ihsan Islamic Center
+            <p className="text-xl text-violet-100">
+              Join us for daily prayers at Samaha Islamic Center
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function PrayerTimesPage() {
             <div className="mt-10 grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-violet-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   Important Notes
@@ -82,11 +82,11 @@ export default function PrayerTimesPage() {
             </div>
 
             {/* Location Card */}
-            <div className="mt-6 bg-gradient-to-r from-green-600 to-green-700 rounded-xl p-6 text-white">
+            <div className="mt-6 bg-gradient-to-r from-violet-600 to-violet-700 rounded-xl p-6 text-white">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Visit Us</h3>
-                  <p className="text-green-100">
+                  <p className="text-violet-100">
                     {siteConfig.address.line1}, {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}
                   </p>
                 </div>
@@ -94,7 +94,7 @@ export default function PrayerTimesPage() {
                   href={`https://maps.google.com/?q=${encodeURIComponent(`${siteConfig.address.line1}, ${siteConfig.address.city}, ${siteConfig.address.state} ${siteConfig.address.zip}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-violet-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

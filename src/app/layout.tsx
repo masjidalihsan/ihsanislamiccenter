@@ -53,7 +53,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-72x72.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Al-Ihsan" />
+        <meta name="apple-mobile-web-app-title" content="Samaha" />
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="flex flex-col min-h-screen">

@@ -43,7 +43,7 @@ Additional Message:
 ${formData.message || 'N/A'}
 
 ========================
-Submitted from Al-Ihsan Islamic Center Website
+Submitted from Samaha Islamic Center Website
     `.trim();
 
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -53,7 +53,7 @@ Submitted from Al-Ihsan Islamic Center Website
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-800 via-green-700 to-emerald-900 py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-violet-800 via-violet-700 to-violet-900 py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-40 h-40 border-2 border-white rounded-full"></div>
           <div className="absolute bottom-10 right-10 w-60 h-60 border-2 border-white rounded-full"></div>
@@ -70,7 +70,7 @@ Submitted from Al-Ihsan Islamic Center Website
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               VIP Umrah <span className="text-amber-400">2026</span>
             </h1>
-            <p className="text-xl text-green-100 mb-4">January 17-30, 2026 | Meccah & Madinah</p>
+            <p className="text-xl text-violet-100 mb-4">January 17-30, 2026 | Meccah & Madinah</p>
             <p className="text-2xl font-bold text-amber-400">From $2,800 per person</p>
           </div>
         </div>
@@ -115,12 +115,12 @@ Submitted from Al-Ihsan Islamic Center Website
               </div>
 
               {/* Contact Info */}
-              <div className="mt-6 bg-green-50 rounded-2xl p-6 border border-green-200">
+              <div className="mt-6 bg-violet-50 rounded-2xl p-6 border border-violet-200">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Questions? Contact Us:</h3>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Sh. Mohamed Mursal:</strong> <a href="tel:+16518083584" className="text-green-700 hover:underline">(651) 808-3584</a></p>
-                  <p><strong>Ahmed Anshur:</strong> <a href="tel:+16517069933" className="text-green-700 hover:underline">(651) 706-9933</a></p>
-                  <p><strong>Sh. Ise Abdi:</strong> <a href="tel:+16122428944" className="text-green-700 hover:underline">(612) 242-8944</a></p>
+                  <p><strong>Sh. Mohamed Mursal:</strong> <a href="tel:+16518083584" className="text-violet-700 hover:underline">(651) 808-3584</a></p>
+                  <p><strong>Ahmed Anshur:</strong> <a href="tel:+16517069933" className="text-violet-700 hover:underline">(651) 706-9933</a></p>
+                  <p><strong>Sh. Ise Abdi:</strong> <a href="tel:+16122428944" className="text-violet-700 hover:underline">(612) 242-8944</a></p>
                 </div>
               </div>
             </div>
@@ -135,8 +135,8 @@ Submitted from Al-Ihsan Islamic Center Website
 
                 {submitted ? (
                   <div className="p-8 text-center">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-16 h-16 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
@@ -144,7 +144,7 @@ Submitted from Al-Ihsan Islamic Center Website
                     <p className="text-gray-600 mb-4">Please send the email to complete your registration.</p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="text-green-700 hover:underline font-medium"
+                      className="text-violet-700 hover:underline font-medium"
                     >
                       Submit another registration
                     </button>
@@ -162,7 +162,7 @@ Submitted from Al-Ihsan Islamic Center Website
                         value={formData.fullName}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors"
                         placeholder="Enter your full name"
                       />
                     </div>
@@ -178,7 +178,7 @@ Submitted from Al-Ihsan Islamic Center Website
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -194,7 +194,7 @@ Submitted from Al-Ihsan Islamic Center Website
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors"
                         placeholder="(XXX) XXX-XXXX"
                       />
                     </div>
@@ -209,7 +209,7 @@ Submitted from Al-Ihsan Islamic Center Website
                           name="adults"
                           value={formData.adults}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors"
                         >
                           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => (
                             <option key={n} value={n}>{n}</option>
@@ -224,7 +224,7 @@ Submitted from Al-Ihsan Islamic Center Website
                           name="children"
                           value={formData.children}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors"
                         >
                           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => (
                             <option key={n} value={n}>{n}</option>
@@ -246,7 +246,7 @@ Submitted from Al-Ihsan Islamic Center Website
                             value="yes"
                             checked={formData.passportReady === 'yes'}
                             onChange={handleChange}
-                            className="w-4 h-4 text-green-600 focus:ring-green-500"
+                            className="w-4 h-4 text-violet-600 focus:ring-violet-500"
                           />
                           <span className="text-gray-700">Yes</span>
                         </label>
@@ -257,7 +257,7 @@ Submitted from Al-Ihsan Islamic Center Website
                             value="no"
                             checked={formData.passportReady === 'no'}
                             onChange={handleChange}
-                            className="w-4 h-4 text-green-600 focus:ring-green-500"
+                            className="w-4 h-4 text-violet-600 focus:ring-violet-500"
                           />
                           <span className="text-gray-700">No</span>
                         </label>
@@ -274,7 +274,7 @@ Submitted from Al-Ihsan Islamic Center Website
                         value={formData.message}
                         onChange={handleChange}
                         rows={3}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors resize-none"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors resize-none"
                         placeholder="Any questions or special requests?"
                       />
                     </div>
@@ -282,7 +282,7 @@ Submitted from Al-Ihsan Islamic Center Website
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="w-full py-4 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-lg font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                      className="w-full py-4 bg-gradient-to-r from-violet-600 to-violet-700 hover:from-violet-700 hover:to-violet-800 text-white text-lg font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                     >
                       Register Now
                     </button>
